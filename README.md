@@ -1,3 +1,36 @@
+# maastrichtu-ids-docusaurus-charts
+
+# 🚀 Docusaurus Charts 🚀
+
+https://github.com/coding-to-music/maastrichtu-ids-docusaurus-charts
+
+https://coding-to-music.github.io/maastrichtu-ids-docusaurus-charts
+
+https://maastrichtu-ids-docusaurus-charts.vercel.app
+
+From / By https://github.com/MaastrichtU-IDS/dsri-documentation
+
+https://dsri.maastrichtuniversity.nl
+
+## Environment variables:
+
+```java
+
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/maastrichtu-ids-docusaurus-charts.git
+git push -u origin main
+npm run deploy:vercel
+```
+
 [![Build](https://github.com/MaastrichtU-IDS/dsri-documentation/workflows/Publish%20to%20GitHub%20Pages/badge.svg)](https://github.com/MaastrichtU-IDS/dsri-documentation/actions?query=workflow%3A%22Publish+to+GitHub+Pages%22) [![Slack](https://img.shields.io/badge/Chat%20on-Slack-blueviolet)](https://dsri.slack.com)
 
 The documentation website at [dsri.maastrichtuniversity.nl](https://dsri.maastrichtuniversity.nl/) is automatically updated by a [GitHub Action](/actions) at each push to this `master` branch.
@@ -10,9 +43,9 @@ Contributions are welcome! See the [guidelines to contribute 👨‍💻](https:
 
 Editing a documentation file is as easy as going to https://github.com/MaastrichtU-IDS/dsri-documentation/edit/master/website/docs/introduction.md.
 
-* Edit a page by login with an account that has edit permissions.
+- Edit a page by login with an account that has edit permissions.
 
-* Otherwise fork the repository and modify the files you want. Pull requests are welcome!
+- Otherwise fork the repository and modify the files you want. Pull requests are welcome!
 
 Browse all documentation pages [here](https://github.com/MaastrichtU-IDS/dsri-documentation/tree/master/website/docs).
 
@@ -41,17 +74,17 @@ API_URL=https://api.dsri.maastrichtuniversity.nl yarn start
 Or use docker-compose:
 
 ```bash
-docker-compose -f docker-compose.website.yml up 
+docker-compose -f docker-compose.website.yml up
 ```
 
 ### Run the full stack
 
 Run the stack with docker-compose:
 
-* Database accessible through phpMyAdmin on http://localhost:8080
-* API on http://localhost:8000, automatically reloaded on change to the code
-* The GPU calendar on http://localhost:8001
-* A CRON job to notify (via email or Slack) about GPU booking everyday
+- Database accessible through phpMyAdmin on http://localhost:8080
+- API on http://localhost:8000, automatically reloaded on change to the code
+- The GPU calendar on http://localhost:8001
+- A CRON job to notify (via email or Slack) about GPU booking everyday
 
 ```bash
 docker-compose up
@@ -144,7 +177,7 @@ SET PASSWORD FOR 'username'@'%' = PASSWORD('newpassword');
 2. Change the **Export method** to **Custom**
 3. Change the **Format** to **CSV** or **CSV for MS Excel**
 4. Check **Export tables as separate files**
-4. Click **Go**
+5. Click **Go**
 
 #### Complete database backup
 
@@ -176,19 +209,27 @@ Embed a Google docs presentation (size does not change dynamically). You can che
 
 ```html
 <figure class="video_container">
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRAfZdOfGt761tIAj2e35OYrOL4uIKWiAQB15MXvsqso3XJ5Mr3-W4dOa9KjDTZpi1LE_D2CU1F5Thy/embed?start=false&loop=false&delayms=15000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  <iframe
+    src="https://docs.google.com/presentation/d/e/2PACX-1vRAfZdOfGt761tIAj2e35OYrOL4uIKWiAQB15MXvsqso3XJ5Mr3-W4dOa9KjDTZpi1LE_D2CU1F5Thy/embed?start=false&loop=false&delayms=15000"
+    frameborder="0"
+    width="960"
+    height="569"
+    allowfullscreen="true"
+    mozallowfullscreen="true"
+    webkitallowfullscreen="true"
+  ></iframe>
 </figure>
 
 # With CSS:
 <script>
-.video-container{
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-  /* overflow: hidden; */
-}
+  .video-container{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+  }
 </script>
 ```
 

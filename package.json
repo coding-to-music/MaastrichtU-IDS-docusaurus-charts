@@ -1,0 +1,22 @@
+{
+  "name": "maastrichtu-ids-docusaurus-charts",
+  "version": "1.0.0",
+  "description": "[![Build](https://github.com/MaastrichtU-IDS/dsri-documentation/workflows/Publish%20to%20GitHub%20Pages/badge.svg)](https://github.com/MaastrichtU-IDS/dsri-documentation/actions?query=workflow%3A%22Publish+to+GitHub+Pages%22) [![Slack](https://img.shields.io/badge/Chat%20on-Slack-blueviolet)](https://dsri.slack.com)",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "git add . && git commit -m Build && git push",
+    "deploy:vercel": "npm run deploy && vercel --prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaastrichtU-IDS/dsri-documentation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaastrichtU-IDS/dsri-documentation/issues"
+  },
+  "homepage": "https://github.com/MaastrichtU-IDS/dsri-documentation#readme"
+}
